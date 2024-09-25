@@ -1,0 +1,39 @@
+version: "3.7"
+
+services:
+  postgresql:
+    image: postgis/postgis:16-3.4
+    container_name: docker-postgresql-zonasi
+    ports:
+      - "5432:5432"
+    networks:
+      - docker-network-zonasi
+    volumes:
+      - docker-volume-postgresql-zonasi:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    restart: always
+
+  geoserver:
+    image: docker.osgeo.org/geoserver:2.26.x
+    container_name: docker-geoserver-zonasi
+    ports:
+      - "5050:8080"
+    networks:
+      - docker-network-zonasi
+    environment:
+      INSTALL_EXTENSIONS: "true"
+      STABLE_EXTENSIONS: "vectortiles,mongodb,printing"
+    volumes:
+      - ./geoserver/data_dir:/opt/geoserver/data_dir
+
+volumes:
+  docker-volume-postgresql-zonasi:
+    name: docker-volume-postgresql-zonasi
+
+networks:
+  docker-network-zonasi:
+    driver: bridge
+    name: docker-network-zonasi
