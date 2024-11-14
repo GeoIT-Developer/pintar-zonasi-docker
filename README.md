@@ -98,5 +98,11 @@ sudo docker run hello-world
 
 - Geoserver open in `http://localhost:5050/geoserver` with username: `admin` and password: `geoserver`
 - Change Geoserver admin password
+- `.geoserver/data_dir` is for persistend geoserver data volume and setting
 
 </details>
+
+### Geoserver Enable CORS
+
+- Copy the web.xml in /geoserver to docker conatiner
+- `docker cp ./geoserver/web.xml docker-geoserver-zonasi:/usr/local/tomcat/webapps/geoserver/WEB-INF/web.xml`

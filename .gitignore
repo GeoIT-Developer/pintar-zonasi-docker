@@ -1,0 +1,5 @@
+# Ignore everything in geoserver/data_dir
+geoserver/data_dir/*
+
+# Allow README file
+!geoserver/data_dir/README

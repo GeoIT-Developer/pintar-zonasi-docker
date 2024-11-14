@@ -27,7 +27,7 @@ services:
       INSTALL_EXTENSIONS: "true"
       STABLE_EXTENSIONS: "vectortiles,mongodb,printing"
     volumes:
-      - ./geoserver/data_dir:/opt/geoserver/data_dir
+      - ./geoserver/data_dir:/opt/geoserver_data
 
 volumes:
   docker-volume-postgresql-zonasi:
