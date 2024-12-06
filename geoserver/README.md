@@ -68,6 +68,11 @@ Follow these steps to connect GeoServer with a PostgreSQL database.
 
 ---
 
+### User for connection to GeoDjango Backend
+
+- **User**: `django`
+- **Password**: `#Djang0`
+
 ## Example PostGIS Configuration
 
 Here’s an example configuration for a PostGIS data store in GeoServer:

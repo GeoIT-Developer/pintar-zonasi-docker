@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   postgresql:
-    image: postgis/postgis:16-3.4
+    image: pgrouting/pgrouting:16-3.4-3.6.1
     container_name: docker-postgresql-zonasi
     ports:
       - "5432:5432"
@@ -28,6 +28,7 @@ services:
       STABLE_EXTENSIONS: "vectortiles,mongodb,printing"
     volumes:
       - ./geoserver/data_dir:/opt/geoserver_data
+      - ./geoserver/web.xml:/usr/local/tomcat/webapps/geoserver/WEB-INF/web.xml
 
 volumes:
   docker-volume-postgresql-zonasi:

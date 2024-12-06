@@ -106,3 +106,7 @@ sudo docker run hello-world
 
 - Copy the web.xml in /geoserver to docker conatiner
 - `docker cp ./geoserver/web.xml docker-geoserver-zonasi:/usr/local/tomcat/webapps/geoserver/WEB-INF/web.xml`
+
+### Create PGRouting Extension
+
+- `CREATE EXTENSION IF NOT EXISTS pgrouting;`

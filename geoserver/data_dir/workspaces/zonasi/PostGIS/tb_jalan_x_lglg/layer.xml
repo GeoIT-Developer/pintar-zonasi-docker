@@ -1,0 +1,16 @@
+<layer>
+  <name>tb_jalan_x_lglg</name>
+  <id>LayerInfoImpl-4d3373bb:193967b2ef1:-7ff7</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe3</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-4d3373bb:193967b2ef1:-7ff8</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-12-06 13:49:37.368 UTC</dateCreated>
+</layer>

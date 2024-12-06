@@ -1,0 +1,17 @@
+<layer>
+  <name>tb_batas_wilayah</name>
+  <id>LayerInfoImpl--61e1628f:1932556bd89:-7ffc</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe0</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--61e1628f:1932556bd89:-7ffd</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-11-13 11:45:40.658 UTC</dateCreated>
+  <dateModified>2024-11-13 12:25:14.760 UTC</dateModified>
+</layer>

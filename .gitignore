@@ -3,3 +3,6 @@ geoserver/data_dir/*
 
 # Allow README file
 !geoserver/data_dir/README
+
+# Allow Workspaces file
+!geoserver/data_dir/workspaces
